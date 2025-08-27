@@ -1,0 +1,130 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Full viewport background */
+.search-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1500&q=80') 
+              center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Centered search card */
+.search-card {
+  background: rgba(255,255,255,0.93);
+  border-radius: 22px;
+  box-shadow: 0 12px 40px rgba(60, 72, 96, 0.13);
+  padding: 2.7rem 2.2rem;
+  max-width: 370px;
+  width: calc(100vw - 36px);
+  display: flex;
+  flex-direction: column;
+}
+
+.search-title {
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.search-card label {
+  margin-top: 1.3em;
+  font-weight: 600;
+  color: #222;
+  font-size: 1.09rem;
+}
+.search-card label span { color: #e53935; }
+
+.search-input {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.07rem;
+  border-radius: 9px;
+  border: 1.5px solid #ddd;
+  margin-top: 0.45em;
+  background: #f7fafc;
+  margin-bottom: 8px;
+  transition: border 0.17s;
+  color: black;
+}
+.search-input:focus {
+  border: 1.5px solid #1de9b6;
+  background: #e3fdff;
+  outline: none;
+}
+
+.search-btn {
+  width: 100%;
+  margin-top: 1.3em;
+  padding: 1em 0;
+  background: linear-gradient(90deg,#1de9b6,#2979ff);
+  color: #fff;
+  font-size: 1.14rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 18px #2979ff13;
+  transition: background 0.15s, opacity 0.1s;
+}
+.search-btn:hover { opacity: 0.93; }
+
+.search-error {
+  color: #b71c1c;
+  padding: 0.7em 0 0 0.1em;
+  font-size: 1em;
+}
+
+@media (max-width: 650px) {
+  .search-card { padding: 1.2rem 0.7rem; max-width: 97vw; }
+  .search-title { font-size: 1.4rem; }
+}
+
+/* ✅ Shared book grid/cards with Explore (no duplication) */
+.book-card {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.12);
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+  transition: transform 0.13s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.book-card:hover { transform: translateY(-7px); }
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1.5px solid #e0e7ff;
+  background-color: #f5f5f5;
+}
+
+.book-info {
+  padding: 1rem 1.2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
+}
+
+.book-author {
+  color: #64748b;
+  font-size: 0.93rem;
+  margin-bottom: 0.4rem;
+}

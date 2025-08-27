@@ -1,0 +1,52 @@
+ .explore-page {
+  min-height: 100vh;
+  background: #f3f7fb;
+  padding: 40px 10vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.back-btn {
+  background: #e3edf9;
+  color: #222;
+  font-size: 1.22rem;
+  border: none;
+  margin-bottom: 18px;
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 6px;
+  transition: background 0.17s;
+}
+.back-btn:hover { background: #97c1ff; color: #1976d2; }
+
+.explore-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.explore-title {
+  background: linear-gradient(90deg, #1de9b6, #2979ff);
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.7em 2em;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0;
+  box-shadow: 0 2px 12px #1de9b690;
+}
+
+.loading-msg {
+  margin-top: 40px;
+  text-align: center;
+  color: #1976d2;
+}
+
+/* Shared book grid (avoid duplication with search) */
+.book-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
