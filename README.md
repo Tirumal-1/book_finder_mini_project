@@ -1,5 +1,6 @@
 Book Finder Application
 Overview
+
 Book Finder is a web application designed for Alex, a college student, to search for books efficiently. The app leverages the Open Library Search API to provide detailed information about books, including title, author, publish year, and cover images. Users can search for books by title and explore the results in a user-friendly interface.
 
 Features
@@ -15,7 +16,7 @@ Technologies Used
 Frontend: HTML, CSS, Javascript, React.js 
 API: Open Library Search API (https://openlibrary.org/developers/api)
 
-Hosting: Deployed on CodeSandbox  
+Hosting: Deployed on CodeSandbox  https://8xcm3x-5173.csb.app/explore
 
 How to Use
 Enter a book title in the search input box.
